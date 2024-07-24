@@ -1,25 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Belajar Tailwind</title>
+    <!-- ada beberapa ukuran yang tidak tersedia contoh ukuran 13, maka dari itu bisa dibuat sendiri ukurannya -->
+    <script>
+        // tailwind.config={
+        // darkMode:'class',
+        //     theme:{
+        //         extend:{
+        //             spacing:{
+        //                 13: '3.25rem',
+        //             },
+        //             fontFamily:{
+        //                 poppins:['Poppins']
+        //             },
+        //             animation:{
+        //                 'spin-slow': 'spin 3s linear',
+        //                 'goyang': 'goyang 1s ease-in-out infinite'
+        //             },
+        //             keyframes:{
+        //                 goyang:{
+        //                     '0%, 100%':{ transform: 'skew(-5deg)'},
+        //                     '50%': {transform: 'skew(5deg)'}
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    </script>
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        
+    </style>
 </head>
-<body>
-    <section class="p-3 m-5 bg-sky-100">
-        <h2 class="text-6xl mb-5">Yahallo</h2>
-        <button class="bg-green-800 hover:bg-sky-500 p-4 text-white font-bold text-3xl">Hoho</button>
+<body class="dark:bg-slate-800 dark:text-white">
+    <h1 class="bg-teal-700 p-4 rounded-2xl font-semibold text-white text-center w-1/2 mx-auto my-6">TEST</h1>
+    <p class="p-13 border-8 border-black font-semibold font-poppins">Coba Ukuran</p>
+
+    <section class="p-7 mt-6 max-w-xl mx-auto border-2">
+        <h2 class="text-4xl font-bold mb-3">Paragraf</h2>
+        <p class="mb-3">
+            Lorem ipsum dolor sit amet consectetur,<a href="#" class="font-bold underline text-red-500">adipisicing elit.</a>Minima temporibus quibusdam delectus modi impedit dolore ea eos! Possimus voluptate facere earum, maiores ea vero eius omnis totam distinctio dignissimos suscipit cum sint excepturi est laboriosam quo nostrum nobis impedit exercitationem itaque deserunt tempora temporibus!
+        </p>
+        <blockquote class="italic mb-3 font-thin text-xl">
+            Eos fugiat eveniet culpa quidem asperiores deserunt error, ab recusandae delectus non nisi, sunt vel consequuntur ipsa a itaque,
+        </blockquote>
+        <p class="">
+         quo sed velit voluptatem sequi consequatur fugit eaque aliquam? Explicabo molestiae culpa enim possimus. Iure, rem impedit error, eos hic consequuntur cupiditate necessitatibus minima, voluptas obcaecati voluptates quae sequi laudantium voluptatibus incidunt tempore nemo nihil sed quasi?</p>
     </section>
 
-    <section class="p-3 m-5 bg-sky-100">
-        <h2 class="text-6xl mb-5">Yahallo</h2>
-        <button class="bg-green-800 hover:bg-sky-500 p-4 text-white font-bold text-3xl">Hoho</button>
+    <section class="p-5 bg-gradient-to-r from-orange-500 via-green-500 to-blue-600 mx-auto w-[600px] my-7 text-center text-white font-bold text-xl h-[200px]">
+        Gradient
+
+        <h1 class="p-1 text-4xl bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Penerapan Dengan Text</h1>
     </section>
+    <!-- bg-color dengan hex code -->
+    <section class="w-1/2 h-[200px] bg-[#bebe23] mx-auto mt-6"></section>
+
+    <div class="w-1/2 h-[300px] bg-purple-500 mx-auto my-7 bg-no-repeat bg-contain bg-center overflow-y-scroll bg-fixed" style="background-image: url('../src/img/gacor sponsbob.png');">
+        <p class="font-semibold text-slate-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quas perspiciatis nostrum magni explicabo cupiditate consectetur cumque rerum, rem aperiam facilis temporibus molestias ipsa natus architecto, doloremque incidunt dolores hic inventore delectus magnam eius ipsum. Quisquam cupiditate inventore illum pariatur illo ipsa maiores aperiam voluptatibus voluptas nesciunt cum molestias suscipit, incidunt deserunt veritatis beatae ex obcaecati doloribus a, eligendi ipsam. Ducimus saepe, molestias voluptatibus natus quis maxime, quisquam blanditiis officia nisi, numquam beatae illum eius repellendus nobis enim recusandae. Veritatis maiores, nihil quis culpa amet inventore, nostrum accusantium voluptates tempore distinctio ex dignissimos maxime cum quae quo deleniti nemo iste?</p>
+    </div>
+
+    <div class="w-[500px] h-[300px] mx-auto my-6 bg-indigo-800 bg-no-repeat bg-cover bg-center shadow-lg shadow-purple-600 overflow-hidden bg-blend-darken" style="background-image: url('../src/img/chinese beaver meme.png');">
+        <!-- <div class="w-full h-full bg-yellow-500 mix-blend-overlay"></div> -->
+    </div>
     
-    <section class="p-3 m-5 bg-sky-100">
-        <h2 class="text-6xl mb-5">Yahallo</h2>
-        <button class="bg-green-800 hover:bg-sky-500 p-4 text-white font-bold text-3xl">Hoho</button>
+    <div class="w-[500px] h-[300px] mx-auto my-6 bg-indigo-800 bg-no-repeat bg-cover bg-center shadow-lg shadow-yellow-600 overflow-hidden brightness-200 flex" style="background-image: url('../src/img/chinese beaver meme.png');">
+        <div class="w-[200px] h-[200px] rounded-full bg-slate-500/30 m-auto backdrop-blur-sm"></div>
+    </div>
+
+    <hr class="my-16">
+    
+    <div class="flex justify-center">
+        <span class="text-sm mr-2">Light</span>
+        <input type="checkbox" name="" id="toggle" class="hidden">
+        <label for="toggle">
+            <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-0.5 cursor-pointer">
+                <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="text-sm ml-2">Dark</span>
+    </div>
+    
+    <section class="w-full mb-12">
+        <button class="bg-purple-600 text-white px-6 py-2 mx-auto block rounded-full hover:bg-green-600 active:bg-blue-600 focus:ring focus:ring-red-600">Simpan</button>
     </section>
+
+    <div class="w-[300px] h-[200px] my-10 mx-auto shadow-lg border  rounded-xl font-poppins p-6 hover:bg-cyan-700 group">
+        <h1 class="font-bold mb-3 text-lg group-hover:text-white">Hallo</h1>
+        <p class="group-hover:text-white selection:bg-indigo-300 selection:text-black first-line:uppercase first-line:tracking-wide first-letter:text-5xl first-letter:float-left first-letter:mr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa, illo dolorem voluptates</p>
+    </div>
+    
+    <div class="w-[300px] p-6 my-10 mx-auto shadow-lg border  rounded-xl font-poppins">
+        <label for="email" class="block font-semibold mb-1 mx-1 after:content-['*'] after:text-red-600">
+            Email
+        </label>
+        <input type="email" id="email" placeholder="masukkan email" class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-green-600 focus:outline-none focus:ring-1 focus:ring-green-600 focus:border-green-700 invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-700 peer">
+
+        <p class="text-sm text-red-700 m-2 text-center invisible peer-invalid:visible">Email Tidak Valid</p>
+    </div>
+
+    <hr class="my-16"/>
+
+    <div class="w-40 h-40 bg-red-500 mx-auto rounded-lg shadow-lg hover:rotate-45 transition hover:bg-purple-500 origin-top-right"></div>
+    
+    <div class="w-40 h-40 mt-[40px] bg-blue-500 mx-auto group">
+        <div class="w-full h-full bg-green-500 rounded-lg shadow-lg group-hover:rotate-90 transition group-hover:bg-purple-500 origin-top-right duration-1000"></div>
+    </div>
+    
+    <div class="w-40 h-40 mt-[30px] bg-red-500 mx-auto rounded-lg shadow-lg animate-goyang "></div>
+
+    <hr class="my-20">
+
+    <div class="container p-6 mx-auto">
+        <div class="border rounded-lg shadow-lg p-12 relative">
+            <div class="w-14 h-14 bg-cyan-500 rounded-full flex justify-center items-center bottom-5 right-5 fixed text-3xl"><a href="#">⏫</a></div>
+            <img src="../src/img/gacor sponsbob.png" alt="" width="200" class="float-left mr-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptate tempora molestiae ullam sint dignissimos placeat a libero harum obcaecati? Amet mollitia consequatur placeat, odio commodi porro facere nisi pariatur quas laboriosam tempora corporis provident veritatis? Autem sed perspiciatis voluptatibus distinctio quibusdam, laborum eos! Quod, veritatis vitae adipisci libero aspernatur est cumque mollitia dolorem pariatur esse autem inventore obcaecati hic nobis debitis, omnis qui fugit sint voluptate nam ab modi. Ad vero facilis voluptatibus aperiam sequi soluta dicta dolorum, recusandae ipsa ea ullam quae eligendi inventore consectetur ipsam temporibus iure excepturi ut et maiores autem beatae accusamus explicabo perspiciatis. Reiciendis.</p>
+        </div>
+    </div>
+
+    <div class="container p-10 mx-auto border rounded-lg shadow-lg mt-20 columns-3">
+        <img src="../src/img/beaver meme.png" alt="" class="mb-3">
+        <img src="../src/img/beaver meme.png" alt="" class="mb-3">
+        <img src="../src/img/beaver meme.png" alt="" class="mb-3">
+        <img src="../src/img/beaver meme.png" alt="" class="mb-3">
+    </div>
+
+    <hr class="my-20">
+
+    <div class="container px-8 font-poppins max-w-md mx-auto md:bg-transparent sm:max-w-xl md:max-w-3xl lg:flex lg:max-w-full lg:p-0">
+        <div class="lg:p-12 lg:flex-1">
+            <h3 class="text-4xl font-bold sm:text-5xl"><span class="text-orange-600">Uhuy</span> Spontan</h3>
+            <img src="../src/img/gacor sponsbob.png" alt="" class="mt-4 rounded-lg shadow-lg w-full sm:mt-6 sm:object-cover sm:object-bottom lg:hidden">
+            <h2 class="mt-6 text-3xl font-semibold sm:mt-8 sm:text-4xl">Mari Spontan dan Katakan Uhuy</h2>
+            <p class="mt-3 sm:mt-4 sm:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis rem quia iusto, autem delectus, accusamus sunt labore a architecto, nam hic illo inventore ipsum nobis asperiores blanditiis. </p>
+            <div class="mt-4">
+                <a href="" class="inline-block px-5 py-3 bg-red-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm">Subribe My Channel</a>
+            </div>
+        </div>
+        <div class="hidden lg:block lg:flex-1 lg:max-w-lg lg:pr-12">
+            <img src="../src/img/gacor sponsbob.png" alt="" class="mt-4 rounded-lg shadow-lg w-full sm:mt-6">
+        </div>
+    </div>
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl">My Gallery</h2>
+    <div class="container mx-auto px-6 font-poppins sm:flex sm:flex-wrap sm:gap-6 sm:justify-center">
+        <div class="rounded-lg shadow-lg overflow-hidden mb-9 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
+            <img src="../src/img/gacor sponsbob.png" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Image Title</div>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, et soluta. Omnis</p>
+            </div>
+        </div>
+        <div class="rounded-lg shadow-lg overflow-hidden mb-9 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
+            <img src="../src/img/chinese beaver meme.png" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Image Title</div>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, et soluta. Omnis</p>
+            </div>
+        </div>
+        <div class="rounded-lg shadow-lg overflow-hidden mb-9 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
+            <img src="../src/img/gacor sponsbob.png" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Image Title</div>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, et soluta. Omnis</p>
+            </div>
+        </div>
+        <div class="rounded-lg shadow-lg overflow-hidden mb-9 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
+            <img src="../src/img/gacor sponsbob.png" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Image Title</div>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, et soluta. Omnis</p>
+            </div>
+        </div>
+        <div class="rounded-lg shadow-lg overflow-hidden mb-9 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
+            <img src="../src/img/gacor sponsbob.png" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Image Title</div>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, et soluta. Omnis</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-64 p-2 font-poppins  grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+        <h2 class="text-xl h-15 font-semibold md:col-start-4 md:flex md:row-start-2"><span class="self-center">SandProduction</span></h2>
+        <div class="h-15 text-lg font-bold md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@sandProduction</span></div>
+
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/src/img/1.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('/src/img/2.jpg')]"></div>
+        </div>
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/src/img/3.jpg')]"></div>
+        </div>
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/src/img/4.jpg')]"></div>
+        </div> 
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/src/img/5.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-2">
+            <div class="grid-card-img bg-[url('/src/img/6.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-4">
+            <div class="grid-card-img bg-[url('/src/img/1.jpg')]"></div>
+        </div>
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/src/img/2.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('/src/img/3.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('/src/img/4.jpg')]"></div>
+        </div>
+    </div>
+
+    <h1>Hello Dunia</h1>
+
+    <div class="mb-60"></div>
+
+    <script>
+        const ck = document.querySelector('#toggle')
+        const html = document.querySelector('html')
+
+        ck.addEventListener('click', function(){
+            ck.checked ? html.classList.add('dark') : html.classList.remove('dark')
+        })
+    </script>
 </body>
 </html>
